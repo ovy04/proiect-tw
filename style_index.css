@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 40px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    overflow: hidden;
+    background: rgb(169, 3, 41);
+    background: radial-gradient(ellipse at center, rgba(169, 3, 41, 1) 0%, rgba(143, 2, 34, 1) 44%, rgba(109, 0, 25, 1) 100%);
+}
+
+
+
+
+
+.title-text {
+    text-align: center;
+}
+
+.title-text span.letters {
+    font-size: 6rem;
+}
+
+.letters {
+    color: rgb(180, 33, 33);
+    text-shadow: 2px 2px 6px #333;
+    animation: color-changer 8s infinite;
+    transition: color-changer ease-in-out;
+    @for $i from 1 through 7 {
+        &:nth-of-type(#{$i}) {
+            animation-delay: #{$i * 100}ms;
+        }
+    }
+}
+
+
+
+.fancy-text {
+    top: 50%;
+    display: block;
+    left: 50%;
+    margin-left: -99px;
+    margin-top: -50px;
+}
+
+
+
+@keyframes color-changer {
+    33% {
+        color: #09252a;
+    }
+    66% {
+        color: #050c0e;
+    }
+    100% {
+        color: rgb(75, 66, 66);
+    }
+}
+
+@-webkit-keyframes color-changer {
+    33% {
+        color: #0ca1bb;
+    }
+    /* #EE0BF5 cctv*/
+    66% {
+        color: #040d0f;
+    }
+    100% {
+        color: #FFF;
+    }
+}
+
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 25, 25);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #807a7a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    background: radial-gradient(ellipse at center, rgb(71, 69, 70) 0%, rgb(29, 27, 27) 44%, rgb(10, 10, 10) 100%);
+    
+}
+
+.topnav a.active {
+    background-color: #dae7db;
+    color: rgb(17, 16, 16);
+}
+
+.topnav .icon {
+    display: flex;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 7px 14px;
+    margin-top: 0px;
+    margin-right: 239px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container form {
+    display: block;
+    padding-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+}
+
+/* Fake image */
+
+.fakeimg {
+    background-color: rgb(230, 218, 218);
+    width: 100%;
+    padding: 20px;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+/* Add a card effect for articles */
+
+.card {
+    background-color: #333;
+    ;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#yaccount, #naccount {
+	position:absolute;
+	right:0px;
+	top:96px;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+}
+
+#signupform, #loginform {
+    width: 33.3%;
+    margin: auto;
+}
+
+#signupform .formcontrol, #loginform .formcontrol {
+    display: block;
+    padding: 14px 22px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom:20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+#signupform, #loginform {
+    width: 66.6%;
+    margin: auto;
+             }
+.topnav a {
+    display:block;
+	}
+}
+
+.pgtitle {
+  margin:center;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+input[type=text] {
+  padding: 14px 22px;
+  margin: 10px 0;
+  border: 5px solid #ccc;
+  transition: 0.5s;
+}
+
+input[type=password] {
+  padding: 10px 16px;
+  margin: 10px 0;
+  border: 5px solid #ccc;
+  transition: 0.5s;
+}
+input[type=date] {
+  margin: 10px 0;
+  border: 5px solid #ccc;
+  transition: 0.5s;
+}
+
+input[type=email] {
+  padding: 10px 16px;
+  margin: 10px 0;
+  border: 5px solid #ccc;
+  transition: 0.5s;
+}
+
+input[type=text]:focus {
+  border: 4px solid #555;
+  outline: none;
+}
+
+input[type=password]:focus {
+  border: 4px solid #555;
+  outline: none;
+}
+
+input[type=email]:focus {
+  border: 4px solid #555;
+  outline: none;
+}
+
+input[type=date]:focus {
+  border: 4px solid #555;
+  outline: none;
+}
+
+select {
+  margin: 10px 0;
+  border: 5px solid #ccc;
+  transition: 0.5s;
+}
+
+select:focus {
+border: 4px solid #555;
+outline: none;
+}
+
+label {
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.submit {
+    font-size:22px;
+    width:100%;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background-color: #ddd;
+    background: radial-gradient(ellipse at center, rgb(71, 69, 70) 0%, rgb(29, 27, 27) 44%, rgb(10, 10, 10) 100%);
+    
+}
+
+#sup {
+float:right;
+}
+
+#lin {
+float:right;
+}
+
+
+#indexsearch{
+outline: 0px;
+
+}
