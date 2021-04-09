@@ -105,7 +105,7 @@ body {
 .topnav a:hover {
     background-color: #ddd;
     background: radial-gradient(ellipse at center, rgb(71, 69, 70) 0%, rgb(29, 27, 27) 44%, rgb(10, 10, 10) 100%);
-    
+
 }
 
 .topnav a.active {
@@ -146,6 +146,7 @@ body {
     background-color: rgb(230, 218, 218);
     width: 100%;
     padding: 20px;
+    height:200px;
 }
 
 .topnav .search-container button:hover {
@@ -189,6 +190,32 @@ body {
     width: 100%;
     font-size: 16px;
     margin-bottom:20px;
+}
+
+
+.card h1 {
+  text-align: center;
+}
+
+
+.products {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+}
+
+
+.productinfo {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+}
+
+
+.productinfo p {
+  text-align: center;
+  font-size: 50px;.
 }
 
 
@@ -282,7 +309,7 @@ label {
 .submit:hover {
     background-color: #ddd;
     background: radial-gradient(ellipse at center, rgb(71, 69, 70) 0%, rgb(29, 27, 27) 44%, rgb(10, 10, 10) 100%);
-    
+
 }
 
 #sup {
