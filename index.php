@@ -1,3 +1,7 @@
+<?php
+    session_start();
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +20,7 @@
         <div class="fancy-text">
             <div class="title-text">
                 <span class="letters">P</span>
-                <span class="letters">a</span>
+                <span class="letters">e</span>
                 <span class="letters">r</span>
                 <span class="letters">f</span>
                 <span class="letters">u</span>
