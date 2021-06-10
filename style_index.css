@@ -104,11 +104,11 @@ nav a
   text-decoration: none;
   text-align: center;
   color: #fff;
-  
+
 }
 nav input
 {
-  flex : 2; 
+  flex : 2;
 }
 
 .search-input {
@@ -197,7 +197,7 @@ nav ul li a:hover:after {
   justify-content: space-around;
   }
 
-  
+
 };
 
 /* Fake image */
@@ -263,6 +263,12 @@ nav ul li a:hover:after {
   padding: 20px;
   grid-template-columns: auto auto;
   grid-column-gap: 50px;
+}
+
+
+.card img {
+  float: left;
+  margin-right: 10px;
 }
 
 
