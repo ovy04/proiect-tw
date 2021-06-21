@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParfumeShopify SignUp</title>
+    <link rel="stylesheet" href="../styles/style_index.css">
+</head>
+<body>
+<div class="header">
+    <div class="fancy-text">
+        <div class="title-text">
+            <span class="letters">P</span>
+            <span class="letters">e</span>
+            <span class="letters">r</span>
+            <span class="letters">f</span>
+            <span class="letters">u</span>
+            <span class="letters">m</span>
+            <span class="letters">e</span>
+            <span class="letters">S</span>
+            <span class="letters">h</span>
+            <span class="letters">o</span>
+            <span class="letters">p</span>
+            <span class="letters">i</span>
+            <span class="letters">f</span>
+            <span class="letters">y</span>
+        </div>
+
+    </div>
+
+
+</div>
+
+<nav>
+        <ul>
+            <li><a href="produse.html">Produse</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="signup.html" id="sup">Sign Up</a></li>
+            <li><a href="login.html" id="lin">Log In</a></li>
+        </ul>
+	<a id="naccount" href="signup.html"> Nu aveți cont? Înregistrați-vă.</a>
+	</nav>
+    </nav>
+
+<div class="card">
+    <h1 class = "pgtitle">Log In</h1>
+
+    <div id="loginform">
+        <form>
+            <input id="lemail" type="email" class="formcontrol" name="nickn" placeholder="Email" required
+                   oninvalid="setCustomValidity('Email in format invalid. Incercati din nou.')"
+                   oninput="setCustomValidity('')">
+            <input  id="lpassword" type="password" class="formcontrol" name="passw" placeholder="Password" maxlength="30" pattern="[a-zA-Z0-9]{8,30}" required
+                   oninvalid="setCustomValidity('Parola in format invalid. Incercati din nou.')"
+                   oninput="setCustomValidity('')">
+        </form>
+    </div>
+    <button class="submit" type = "submit" onclick="getLoginResponses();">Log In</button>
+
+
+
+</div>
+<script type="text/javascript" src="../services/login.js"></script>
+</body>
+</html>

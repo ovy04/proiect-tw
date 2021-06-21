@@ -1,3 +1,18 @@
 # PerMa (Smart Perfume Web Manager)
 
-Sa se conceapa o aplicatie Web de management al resurselor dintr-o parfumerie care ofera utilizatorilor diverse (tipuri de) parfumuri, in functie de profilul unei persoane si vizand o anumita ocazie, un anotimp etc. Fiecarui produs i se vor atasa proprietati specifice, inclusiv ingrediente, pret, comentarii, tag-uri, relatii cu alte parfumuri inrudite. De asemenea, se va simula expedierea parfumurilor achizitionate la o adresa stabilita, eventual in regim de cadou. Administratorul sistemului va avea posibilitatea sa consulte rapoarte -- generate in formatele HTML, CSV si PDF -- privind stocurile existente si situatia vanzarilor in functie de categoria de parfumuri, profilul utilizatorilor, o anumita perioada de timp, ocazie etc.
+Sa se conceapa o aplicatie Web de management al resurselor dintr-o parfumerie care ofera utilizatorilor 
+diverse (tipuri de) parfumuri, in functie de profilul unei persoane si vizand o anumita ocazie, un anotimp etc. 
+Fiecarui produs i se vor atasa proprietati specifice, inclusiv ingrediente, pret, comentarii, tag-uri,
+relatii cu alte parfumuri inrudite. De asemenea, se va simula expedierea parfumurilor achizitionate
+la o adresa stabilita, eventual in regim de cadou. Administratorul sistemului va avea posibilitatea sa
+consulte rapoarte -- generate in formatele HTML, CSV si PDF -- privind stocurile existente si situatia
+vanzarilor in functie de categoria de parfumuri, profilul utilizatorilor, o anumita perioada de timp, ocazie etc.
+
+
+## TODO
+
+
+        3. login
+        4. command
+        5. display products
+        6. admin page : pdf

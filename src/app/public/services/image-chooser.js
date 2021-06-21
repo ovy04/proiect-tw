@@ -1,0 +1,22 @@
+const perfume_images = {
+    "Allure Homme" : "../images/perfumes/allure-homme.jpg",
+    "Black Orchid" : "../images/perfumes/black-orchid.jpg",
+    "Bleu de Chanel" : "../images/perfumes/bleu-de-chanel.jpg",
+    "Candy" : "../images/perfumes/candy.jpg",
+    "Chanel No 5" : "../images/perfumes/chanel-no-5.jpg",
+    "Coco Mademoiselle" : "../images/perfumes/coco-mademoiselle.jpg",
+    "Girl of now forever" : "../images/perfumes/girl-of-now-forever.jpg",
+    "Grey Vetiver" : "../images/perfumes/grey-vetiver.jpg",
+    "Guilty black pour homme" : "../images/perfumes/guilty-black-pour-homme.jpg",
+    "Homme Cologne" : "../images/perfumes/homme-cologne.jpg",
+    "Jasmine Rouge" : "../images/perfumes/jasmine-rouge.jpg",
+    "L'Homme" : "../images/perfumes/l'homme.jpg",
+    "La femme" : "../images/perfumes/la-femme.jpg",
+    "Le parfum" : "../images/perfumes/le-parfum.jpg",
+    "Luna Rossa" : "../images/perfumes/luna-rossa.jpg",
+    "Miss Dior" : "../images/perfumes/miss-dior.jpg",
+    "Pure Poison" : "../images/perfumes/pure-poison.jpg",
+    "Rush" : "../images/perfumes/rush.jpg",
+    "Sauvage" : "../images/perfumes/sauvage.jpg",
+    "Soleil Blanc" : "../images/perfumes/soleil-blanc.jpg"
+};

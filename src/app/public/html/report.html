@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ro" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Perfume Magazine (PerMa)</title>
+    <link rel="stylesheet" type="text/css" href="../styles/report.css">
+
+</head>
+<body prefix="schema: https://schema.org">
+<header>
+    <div class="banner">
+        <div class="status">PerMa project</div>
+    </div>
+    <h1>Perfume Magazine</h1>
+</header>
+
+<div role="contentinfo"><ol role="directory">
+    <li><a href="#abstract"><span>1. </span>Descrierea proiectului</a></li>
+    <li><a href="#introduction"><span>2. </span>Introducere</a></li>
+    <li><a href="#structure"><span>3. </span>Structura</a><ol role="directory">
+        <li><a href="#TehnologiiUtilizate"><span>3.1 </span>Tehnologii utilizate</a></li>
+        <li><a href="#Pagini"><span>3.2 </span>Pagini</a>
+    </ol></li><li><a href="#functionalitate"><span>4. </span>Funcționalități</a></li>
+    <li><a href="#user"><span>6. </span>Experiența utilizatorului</a></li>
+    <li><a href="#diagrame"><span>7. </span>Diagrame</a></li>
+    <li><a href="#resurse"><span>10. </span>Resurse</a></li>
+</ol>
+</div>
+<section id="abstract">
+    <h2><span>1. </span>Descrierea proiectului</h2>
+    <p>
+        Perfume Magazine (PerMa) este o aplicatie web care reprezinta un magazin virtual. Acesta pune la dispozitie utilizatorilor/cumparatorilor mai multe parfumuri.
+    </p>
+</section>
+<section id="introduction" role="doc-introduction">
+    <h2><span>2. </span>Introducere</h2>
+    <p>
+        Proiectul este un instrument Web de online shopping, care permite vizualizarea si achizitionare de parfumuri, grupate pe sezoane.
+    </p>
+</section>
+<section id="structure">
+    <h2><span>3. </span>Structură</h2>
+    <section id="Tehnologii utilizate">
+        <h3><span>3.1 </span>Tehnologii utilizate</h3>
+        <section id="html_css">
+            <h4><span>3.1.1 </span>HTML & CSS</h4>
+            <p>
+                Pentru a crea interfața aplicației am folosit HTML și CSS.
+            </p>
+        </section>
+        <section id="javascript">
+            <h4><span>3.1.2 </span>Javascript</h4>
+            <p>
+                JavaScript este utilizat pentru a realiza microserviciile necesare (login, singup, show perfumes) și pentru a stabili conexiunea
+                și comunicarea între aplicație și baza de date. (API)
+            </p>
+        </section>
+        <section id="sqlite">
+            <h4><span>3.1.3 </span>Sqlite & Sequelizer ORM</h4>
+            <p>
+                Pentru stocarea și extragerea datelor este utilizată o bază de date Sqlite.
+            </p>
+        </section>
+        <section id="HTTP">
+            <h4><span>3.1.3 </span>HTTP</h4>
+            <p>
+                Pentru crearea serverului
+            </p>
+        </section>
+    </section>
+</section>
+<section id="Pagini">
+    <h3><span>3.2 </span>Pagini</h3>
+    <section id="home">
+        <h4>Site-ul este compus din 11 pagini, iar navigarea între ele se poate face folosind bara de navigare.</h4>
+    </section>
+</section>
+</section>
+<section id="functionalitate">
+    <h2><span>4. </span>Funcționalitate</h2>
+    <ol>
+        <li>Aplicația rulează la 127.0.0.1:5000. Utilizatorul își poate alege sezonul pentru care vrea sa vada lista parfumurilor. În funcție de alegerea făcuta, va fi redirectionat spre pagina corespunzatoare. </li>
+        <li>De asemenea, utilizatorul poate adauga un produs in cos, poate vizualiza raportul paginii web și pagina de contact.</li>
+        <li>Panoul de administrare rulează la 127.0.0.1:5000/admin-statistics.html. Un administrator poate genera statistici referitoare la stocuri si comenzi, in formatele CSV, HTML si PDF</li>
+    </ol>
+</section>
+
+<section id="backend">
+    <h2><span>5. </span>Arhitectura si procesul de construire al aplicatiei</h2>
+    <ol>
+        <li>A fost abordata o arhitectură bazată pe (micro)servicii. </li>
+        <li>Codul sursă este structurat conform arhitecturii MVC.</li>
+        <li>Backendul aplicației a fost realizat în Node.js. </li>
+        <li>Am folosit GitHub ca sistem de stocare şi management online al codului-sursă.</li>
+
+    </ol>
+    <h3><span> 5.1 </span> Backend - API & Admin Panel</h3>
+    Pentru realizarea CRUD API-ului, am recurs la Sequelizer, un ORM (Object Relation Model) care mapeaza tabelele existente in baza de date(perfumes, clients, commands) pe
+    modelele descrise in /src/api/entities/ . Am folosit paradigma MCV (Model, View, Controller) pentru proiectarea API-ului.
+
+    Aplicatia cuprinde si un admin panel, care poate fi accesat la: 127.0.0.1:5000/admin-statistics.html, care permite generarea si descarcarea rapoartelor privind stocuri si comenzi in formatele
+    HTML, CSV si PDF
+
+    <h3><span> 5.2 </span> Frontend and design</h3>
+    Pentru realizarea designului aplicatiei, am folosit HTML5, CSS si Javascript. Designul este simplu si potrivit pentru functionalitatea aplicatiei.
+
+
+<section id="diagrame">
+    <h2><span>6. </span>Diagrame</h2>
+    <img alt="diagram" src = "../images/diagrama.png">
+</section>
+
+<section id="resurse">
+    <h2><span>7. </span>Resurse</h2>
+    <p class="issue">
+        <a href="https://www.tutorialspoint.com/sqlite/sqlite_create_database.htm">Database creation & manipulation</a>
+    </p>
+    <p class="issue">
+        <a href="https://www.sqlitetutorial.net/sqlite-nodejs/query/">Querying database</a>
+    </p>
+    <p class="issue">
+        <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html">Cursuri Tehnologii Web</a>
+    </p>
+    <p class="issue">
+        <a href=https://w3c.github.io/scholarly-html/#semantics>Template Scholarly</a>
+    </p>
+</section>
+
+</section>
+</body>
+</html>
