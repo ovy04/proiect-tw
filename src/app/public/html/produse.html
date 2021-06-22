@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/style_index.css">
-    <script type="text/javascript">
+    <script>
         if(typeof window !== 'undefined' && localStorage.getItem("loggedIn") !== "true"){
             localStorage.setItem("loggedIn","false");
         }
@@ -62,7 +62,7 @@
 </div>
 
 
-<div class="card" onclick="localStorage.setItem('season','iarna'); window.location.replace('http://127.0.0.1:5000/item.html')";>
+<div class="card" onclick="localStorage.setItem('season','iarna'); window.location.replace('http://127.0.0.1:5000/item.html')">
     <h1>Parfumuri de iarna</h1>
 </div>
 
@@ -91,6 +91,6 @@
 </div>
 
 
-<script type="text/javascript" src="../services/display-products.js"></script>
+<script src="../services/display-products.js"></script>
 </body>
 </html>

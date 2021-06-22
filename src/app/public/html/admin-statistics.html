@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>PerMa Admin</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js">  </script>
+    <link rel="stylesheet" href="../styles/report.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js">  </script>
 </head>
-<h1 align="center"> PerMa Admin</h1>
 <body>
 
-    <select align="center" name="type" id="type">
+<h1> PerMa Admin</h1>
+
+    <select name="type" id="type">
         <option value="stocks"> Stocks</option>
         <option value="commands"> Commands</option>
     </select>
     <button type="button" onclick="setType();">Submit</button>
     <br>
-    <button type="button" onclick="generateStatistics()" align="center">HTML</button>
+    <button type="button" onclick="generateStatistics()">HTML</button>
     <br>
-    <div id="table" align="center"></div>
-    <button type="button" onclick="generateCSV(document.getElementById('table'));" align="center">CSV</button>
+    <div id="table" ></div>
+    <button type="button" onclick="generateCSV(document.getElementById('table'));">CSV</button>
     <br>
-    <button type="button" onclick="generatePDF();" align="center">PDF</button>
+    <button type="button" onclick="generatePDF();">PDF</button>
 
-    <script type="text/javascript" src="../services/admin-statistics.js"></script>
+    <script src="../services/admin-statistics.js"></script>
 </body>
 </html>

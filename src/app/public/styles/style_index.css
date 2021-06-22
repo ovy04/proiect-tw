@@ -14,8 +14,6 @@
 
 
 
-
-
 .title-text {
     text-align: center;
 }
@@ -198,7 +196,7 @@ nav ul li a:hover:after {
   }
 
 
-};
+}
 
 /* Fake image */
 
@@ -239,12 +237,12 @@ nav ul li a:hover:after {
 	color:white;
 }
 
-#signupform, #loginform {
+#signupform, #loginform, #loginform2 {
     width: 33.3%;
     margin: auto;
 }
 
-#signupform .formcontrol, #loginform .formcontrol {
+#signupform .formcontrol, #loginform .formcontrol, #loginform2 .formcontrol {
     display: block;
     padding: 14px 22px;
     width: 100%;
@@ -327,7 +325,6 @@ nav ul li a:hover:after {
 }
 
 .pgtitle {
-  margin:center;
   color: white;
   font-size: 50px;
   text-align: center;
